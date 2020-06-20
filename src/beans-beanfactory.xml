@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--通过factorybean配置bean的实例
+    class：指向factorybean的全类名
+    property：指向配置factorybean的属性-->
+    <bean id="car"
+          class="src.factorybean.CarFactoryBean">
+        <property name="brand" value="BWM">
+        </property>
+    </bean>
+</beans>
